@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>HTML Academy: Девайс</title>
 </head>
 <body>
     
   <header>
-    <span class="logo header-logo">Device</span>
+    <img src="img/logo-head.png" width="163" height="35" alt="logo">
     <label><input type="text">Поиск по сайту</label>
     <ul class="user-navigation">
       <li class="login-link"><a href="#">Войти</a></li>
@@ -16,8 +16,7 @@
       <li><a href="#">Сравнить</a></li>
       <li><a href="#">Корзина</a></li>
     </ul>
-    <h3>Каталог товаров</h3>
-    <a href="#" class="catalog-btn"></a>
+    <a href="#">Каталог товаров</a>    
     <ul class="catalog-navigation">
       <li><a href="#">Виртуальная реальность</a></li>
       <li><a href="#">Моноподы для селфи</a></li>
@@ -35,15 +34,15 @@
 
   <main class="container">    
     <section class="main-slider">
-      <img src="img/selfie.jpg" width="500" height="500" alt="Селфи-Палка">
+      <img src="img/selfie.png" width="384" height="486" alt="Селфи-Палка">
       <span class="slider-numb-item">01</span>      
       <h3>Делай селфи, как Бен Стиллер!</h3>
       <p>Самая длинная селфи палка для селфи доступна в нашем магазине</p>
       <p>Восемь (Восемь,Карл!) метров длинной и весом всего 5 килограмм</p>      
       <a href="#" class="btn">Подробнее</a>
-      <span class="slide-toggle active"></span>
-      <span class="slide-toggle"></span>
-      <span class="slide-toggle"></span>
+      <a href="#" class="slide-toggle active"></a>
+      <a href="#" class="slide-toggle"></a>
+      <a href="#" class="slide-toggle"></a>
       <table>
         <tr>
           <td>8,5 м</td>
@@ -61,27 +60,27 @@
     <section class="product-menu">
       <ul>
         <li class="product-item">
-          <img src="img/virtualreality.jpg" alt="Виртуальная реальность">
+          <img src="img/virtualreality.png" alt="Виртуальная реальность">
           <h3><a href="#">Виртуальная реальность</a></h3>
         </li>
         <li class="product-item">
-          <img src="img/monopodforselfie.jpg" alt="Моноподы для селфи">
+          <img src="img/monopodforselfie.png" width="86" height="117" alt="Моноподы для селфи">
           <h3><a href="#">Моноподы для селфи</a></h3>
         </li>
         <li class="product-item">
-          <img src="img/action-cam.jpg" alt="Экшн-камеры">
+          <img src="img/action-cam.png" width="71" height="87" alt="Экшн-камеры">
           <h3><a href="#">Экшн-камеры</a></h3>
         </li>
         <li class="product-item">
-          <img src="img/fitness-braslet.jpg" alt="Фитнес-браслеты">
+          <img src="img/fitness-braslet.png" width="107" height="65" alt="Фитнес-браслеты">
           <h3><a href="#">Фитнес-браслеты</a></h3>
         </li>
         <li class="product-item">
-          <img src="img/smart-watch.jpg" alt="Умные часы">
+          <img src="img/smart-watch.png" width="56" height="98" alt="Умные часы">
           <h3><a href="#">Умные часы</a></h3>
         </li>
         <li class="product-item">
-          <img src="img/quadrotor.jpg" alt="Квадрокоптеры">
+          <img src="img/quadrotor.png" width="132" height="69" alt="Квадрокоптеры">
           <h3><a href="#">Квадрокоптеры</a></h3>
         </li>
       </ul>
@@ -101,10 +100,10 @@
     </section>
     
     <section class="brand-img-container">
-      <a href="#"><img src="img/dji.jpg" alt="dji"></a> 
-      <a href="#"><img src="img/spgadgets.jpg" alt="spgadgets"></a> 
-      <a href="#"><img src="img/gopro.jpg" alt="gopro"></a> 
-      <a href="#"><img src="img/vive.jpg" alt="vive"></a> 
+      <a href="#"><img src="img/dji.png" width="260" height="100" alt="dji"></a> 
+      <a href="#"><img src="img/spgadgets.png" width="260" height="100" alt="spgadgets"></a> 
+      <a href="#"><img src="img/gopro.png" width="260" height="100" alt="gopro"></a> 
+      <a href="#"><img src="img/vive.png" width="260" height="100" alt="vive"></a> 
     </section>
 
     <section class="about_us">
@@ -122,20 +121,20 @@
     <section class="contacts">
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <img src="img/map.jpg" alt="карта">
+      <img src="img/map.jpg" width="560" height="222" alt="карта">
       <a href="#" class="btn">Напишите нам</a>
     </section>
   </main>
 
   <footer>    
     <div class="row-top-footer">
-      <a href="#" class="logo footer-logo">Device</a>
+      <img src="img/logo.png" width="163" height="35" class="logo footer-logo">
       <ul class="user-navigation-footer">
-        <li class="login-link">Войти</li>
+        <li class="login-link"><a href="#">Войти</a></li>
       </ul>
       <ul class="card">
-        <li>Сравнить</li>
-        <li>Корзина</li>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
       </ul>        
     </div>
       
@@ -151,11 +150,11 @@
           
     <div class="row-bottom-footer">
       <div class="social-img">
-        <a href="#"><img src="img/facebook.jpg" alt="facebook"></a> 
-        <a href="#"><img src="img/instagram.jpg" alt="instagram"></a> 
-        <a href="#"><img src="img/twitter.jpg" alt="twitter"></a> 
+        <a href="#"><img src="img/facebook.png" width="32" height="32" alt="facebook"></a> 
+        <a href="#"><img src="img/instagram.png" width="32" height="32" alt="instagram"></a> 
+        <a href="#"><img src="img/twitter.png" width="32" height="32" alt="twitter"></a> 
       </div>          
-      <a href="htmlacademy.ru"><img src="img/htmlacademy.jpg" alt="htmlacademy"></a>
+      <a href="htmlacademy.ru"><img src="img/logo-html.png" width="27" height="35" alt="htmlacademy-logo"></a>
     </div>        
   </footer>
 
