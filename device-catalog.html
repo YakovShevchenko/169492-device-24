@@ -43,7 +43,49 @@
 
     <section class="filter">
       <h2>Фильтр:</h2>
-      <!-- Здесь будет форма -->
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">      
+        <label for="сost-of">Стоимость</label>
+        <input type="range" id="сost-of" name="сost-of" min="1" max="14" step="1">
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-black" id="filter-color-black" checked>
+              <label for="filter-color-black">Черный</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-white" id="filter-color-white">
+              <label for="filter-color-white">Белый</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-blue" id="filter-color-blue" checked>
+              <label for="filter-color-blue">Синий</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-red" id="filter-color-red" checked>
+              <label for="filter-color-red">Красный</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-pink" id="color-pink">
+              <label for="filter-color-pink">Розовый</label>
+            </li>              
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth-on" value="on" id="bluetooth-on">
+              <label for="filter-bluetooth-on">Есть</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth-off" value="off" id="bluetooth-off" checked>
+              <label for="filter-bluetooth-off">Нет</label>
+            </li>              
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-button btn">Показать</button>
+      </form>
     </section>
 
     <section class="sorting">
