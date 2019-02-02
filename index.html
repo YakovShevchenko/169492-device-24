@@ -33,31 +33,73 @@
   </header>  
 
   <main class="container">    
-    <section class="main-slider">
-      <img src="img/selfie.png" width="384" height="486" alt="Селфи-Палка">
-      <span class="slider-numb-item">01</span>      
-      <h3>Делай селфи, как Бен Стиллер!</h3>
-      <p>Самая длинная селфи палка для селфи доступна в нашем магазине</p>
-      <p>Восемь (Восемь,Карл!) метров длинной и весом всего 5 килограмм</p>      
-      <a href="#" class="btn">Подробнее</a>
-      <a href="#" class="slide-toggle active"></a>
-      <a href="#" class="slide-toggle"></a>
-      <a href="#" class="slide-toggle"></a>
-      <table>
-        <tr>
-          <td>8,5 м</td>
-          <td>5 кг</td>
-          <td>Карбон</td>
-        </tr>
-        <tr>
-          <td>Длина палки</td>
-          <td>Вес палки</td>
-          <td>Материал</td>
-        </tr>
-      </table>    
+    <section class="main-slider">      
+      <section class="slider-item">
+        <img src="img/selfie.png" width="384" height="486" alt="Селфи-Палка">
+        <span class="slider-numb-item">01</span>      
+        <h3>Делай селфи, как Бен Стиллер!</h3>
+        <p>Самая длинная селфи палка для селфи доступна в нашем магазине</p>
+        <p>Восемь (Восемь,Карл!) метров длинной и весом всего 5 килограмм</p>      
+        <a href="#" class="btn">Подробнее</a>
+        <a href="#" class="slide-toggle active"></a>
+        <a href="#" class="slide-toggle"></a>
+        <a href="#" class="slide-toggle"></a>
+        <table>
+          <tr>
+            <td>8,5 м</td>
+            <td>5 кг</td>
+            <td>Карбон</td>
+          </tr>
+          <tr>
+            <td>Длина палки</td>
+            <td>Вес палки</td>
+            <td>Материал</td>
+          </tr>
+        </table>     
+      </section>
+
+      <section class="slider-item">
+        <img src="img/fitness-braslet-slider.png" width="384" height="486" alt="Селфи-Палка">
+        <span class="slider-numb-item">02</span>      
+        <h3>Худеем правильно!</h3>
+        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>      
+        <a href="#" class="btn">Подробнее</a>
+        <a href="#" class="slide-toggle"></a>
+        <a href="#" class="slide-toggle active"></a>
+        <a href="#" class="slide-toggle"></a>
+        <table>
+          <tr>
+            <td>48 часов</td>              
+          </tr>
+          <tr>
+            <td>Без подзарядки</td>              
+          </tr>
+        </table>     
+      </section>
+      <section class="slider-item">
+        <img src="img/quadra-slider.png" width="384" height="486" alt="Селфи-Палка">
+        <span class="slider-numb-item">03</span>      
+        <h3>Порхает как бабочка, жалит как пчела</h3>
+        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>      
+        <a href="#" class="btn">Подробнее</a>
+        <a href="#" class="slide-toggle"></a>
+        <a href="#" class="slide-toggle"></a>
+        <a href="#" class="slide-toggle active"></a>
+        <table>
+          <tr>
+            <td>800 м</td>
+            <td>50 м</td>              
+          </tr>
+          <tr>
+            <td>Дальность полета</td>
+            <td>Радиус поражения</td>              
+          </tr>
+        </table>     
+      </section>    
     </section>
 
     <section class="product-menu">
+      <h2 class="visually-hidden">Разделы товаров</h2>  
       <ul>
         <li class="product-item">
           <img src="img/virtualreality.svg" width="97" height="55" alt="Виртуальная реальность">
@@ -87,6 +129,7 @@
     </section>
 
     <section class="features">
+      <h2 class="visually-hidden">Приемущества:</h2> 
       <ul>
         <li class="btn feature-item-current"><a href="">Доставка</a></li>
         <li class="btn feature-item"><a href="">Гарантия</a></li>
@@ -100,6 +143,7 @@
     </section>
     
     <section class="brand-img-container">
+      <h2 class="visually-hidden">Брэнды</h2> 
       <a href="#"><img src="img/dji.png" width="260" height="100" alt="dji"></a> 
       <a href="#"><img src="img/spgadgets.png" width="260" height="100" alt="spgadgets"></a> 
       <a href="#"><img src="img/gopro.png" width="260" height="100" alt="gopro"></a> 
@@ -121,8 +165,25 @@
     <section class="contacts">
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <img src="img/map.png" width="560" height="222" alt="карта">
+      <img src="img/map.png" width="560" height="222" alt="г. Москва, ул.Строителей, 15">
       <a href="#" class="btn">Напишите нам</a>
+    </section>
+
+    <section class="modal write-us">
+      <h2>Напишите нам</h2>      
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">          
+        <p class="write-us-item">
+          <label for="write-us-name">Ваше имя:</label>
+          <input id="write-us-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="write-us-item">
+          <label for="write-us-email">Ваше e-mail:</label>
+          <input id="write-us-email" type="email" name="email" value="" placeholder="example@gmail.com">
+        </p>
+        <textarea name="write-us-text-message" placeholder="В свободной форме"></textarea>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">x</button>
     </section>
   </main>
 
