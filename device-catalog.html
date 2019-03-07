@@ -23,7 +23,7 @@
           <li class="login-link-logout"><a href="#">Выйти</a></li>
         </ul>
         <ul class="cart">
-          <li сlass="compare"><a href="#">Сравнить</a></li>
+          <li class="compare"><a href="#">Сравнить</a></li>
           <li class="cart-item"><a href="#">Корзина</a></li>
         </ul>
       </div>
@@ -69,46 +69,52 @@
           <h2 class="filter-title">Фильтр:</h2>
         </div>        
         <section class="filter">                   
-            <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">      
-              <label for="сost-of">Стоимость</label>
-              <input type="range" id="сost-of" name="сost-of" min="1" max="14" step="1">
+            <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">  
+              <div class="filter-price-box">
+                <label for="сost-of">Стоимость</label>
+                <input type="range" id="сost-of" name="сost-of" min="1" max="14" step="1">
+              </div>    
               <fieldset>
-                <legend>Цвет</legend>
-                <ul>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-black" id="filter-color-black" checked>
-                    <label for="filter-color-black">Черный</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-white" id="filter-color-white">
-                    <label for="filter-color-white">Белый</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-blue" id="filter-color-blue" checked>
-                    <label for="filter-color-blue">Синий</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-red" id="filter-color-red" checked>
-                    <label for="filter-color-red">Красный</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-pink" id="color-pink">
-                    <label for="filter-color-pink">Розовый</label>
-                  </li>              
-                </ul>
+                <div class="filter-color-box">
+                  <legend>Цвет</legend>
+                  <ul>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-black" id="filter-color-black" checked>
+                      <label for="filter-color-black">Черный</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-white" id="filter-color-white">
+                      <label for="filter-color-white">Белый</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-blue" id="filter-color-blue" checked>
+                      <label for="filter-color-blue">Синий</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-red" id="filter-color-red" checked>
+                      <label for="filter-color-red">Красный</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-pink" id="color-pink">
+                      <label for="filter-color-pink">Розовый</label>
+                    </li>              
+                  </ul>
+                </div> 
               </fieldset>
               <fieldset>
+                <div class="filter-bluetooth-box">
                 <legend>Bluetooth:</legend>
-                <ul>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth-on" value="on" id="bluetooth-on">
-                    <label for="filter-bluetooth-on">Есть</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth-off" value="off" id="bluetooth-off" checked>
-                    <label for="filter-bluetooth-off">Нет</label>
-                  </li>              
-                </ul>
+                  <ul>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth-on" value="on" id="bluetooth-on">
+                      <label for="filter-bluetooth-on">Есть</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth-off" value="off" id="bluetooth-off" checked>
+                      <label for="filter-bluetooth-off">Нет</label>
+                    </li>              
+                  </ul>
+                </div>
               </fieldset>
               <button type="submit" class="btn filter-button">Показать</button>
             </form>          
@@ -185,7 +191,7 @@
         <ul class="user-navigation-footer cart-footer">
           <li class="user-navigation-item login-link-footer"><a href="#">Валентин Петухов</a></li>
           <li class="user-navigation-item login-link-logout"><a href="#">Выйти</a></li>        
-          <li сlass="user-navigation-item compare-footer"><a href="#">Сравнить</a></li>
+          <li class="user-navigation-item compare-footer"><a href="#">Сравнить</a></li>
           <li class="user-navigation-item cart-item-footer"><a href="#">Корзина</a></li>
         </ul>        
       </div>
