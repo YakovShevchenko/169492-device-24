@@ -44,7 +44,7 @@ a {
 }
 
 .container {
-    width: 1160px;
+    max-width: 1160px;
     margin: 0 auto;
 }
 
@@ -135,6 +135,10 @@ header .container {
     opacity: .3;
 }
 
+fieldset {
+    padding: 0;
+}
+
 fieldset,
 .search-field input {
     border: none;   
@@ -175,7 +179,7 @@ fieldset,
 }
 
 .search-button {
-    display: none;    
+    visibility: hidden;    
     background: transparent;
     border: 2px solid #000;
     padding: 8px 20px;
@@ -192,7 +196,7 @@ fieldset,
 }
 
 .search input:focus + .search-button {
-    display: block;
+    visibility: visible;
 }
 
 .user-navigation,
@@ -262,7 +266,7 @@ fieldset,
     width: 320px;    
 }
 
-.cart li:first-child {
+.cart .compare {
     padding-left: 35px;
     margin-right: 30px;
 
@@ -643,16 +647,25 @@ fieldset,
     margin: 80px 0;
 }
 
-.brand-img-container img {
-    filter: grayscale(1);
-    opacity: .2;
-    transition: all ease .3s;  
+.brand-item a {
+    display: block;
+    background-repeat: no-repeat;
 }
 
-.brand-img-container img:hover {
-    filter: grayscale(0);
-    opacity: 1;
-    transition: all ease .3s; 
+.brand-item:nth-child(1) a:hover {
+    background-image: url(../img/dji.png);        
+}
+
+.brand-item:nth-child(2) a:hover {
+    background-image: url(../img/spgadgets.png);    
+}
+
+.brand-item:nth-child(3) a:hover {
+    background-image: url(../img/gopro.png);
+}
+ 
+.brand-item:nth-child(4) a:hover {
+    background-image: url(../img/vive.png);
 }
 
 .prefooter-column {
@@ -802,8 +815,40 @@ fieldset,
     width: 270px;
 }
 
+.filter-color-box {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    
+    padding-bottom: 40px;
+}
+
+.filter-price-box {
+    border-top: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 40px;
+}
+
+.filter-bluetooth-box {
+    padding-bottom: 20px;
+}
+
+.filter-price-box label,
+.filter-form legend {
+    padding-top: 12px;
+    padding-bottom: 25px;
+
+    font-family: 'gilroyextrabold', Arial, sans-serif;    
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    color: #000; 
+}
+
 .filter-form {
     margin: 70px 0 0 60px;
+    padding-right: 65px;
 }
 
 .filter-button {
