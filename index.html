@@ -14,10 +14,10 @@
       
       <div class="header-top"> 
         <img src="img/logo-device.svg" class="logo header-logo" width="163" height="35" alt="logo">
-        <div class="search-field">
-          <label class="search"><input type="text" placeholder="Поиск по сайту">
-          <button class="search-button">Найти</button></label>
-        </div>
+        <form class="search-field" method="get">
+          <label class="search"><input type="search" placeholder="Поиск по сайту">
+          <button type="submit" class="search-button">Найти</button></label>
+        </form>
         <ul class="user-navigation">
           <li class="login-link"><a href="#">Войти</a></li>
         </ul>
@@ -249,8 +249,7 @@
         <section class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947363!2d37.52742931601626!3d55.687034004529885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sby!4v1551614295233" 
-          width="560" height="222" frameborder="0" style="border:0" allowfullscreen></iframe>          
+          <img class="map-img" src="img/map.png" alt="г.Москва, ул.Строителей, 15" width="560" height="222">        
           <a href="#" class="btn">Напишите нам</a>
         </section>
       </div>
@@ -291,21 +290,29 @@
   </footer>
 
   <section class="modal write-us">
-      <h2>Напишите нам</h2>      
+      <h2 class="visually-hidden">Напишите нам</h2>      
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">          
-        <p class="write-us-item">
+        <div class="write-us-item">
           <label for="write-us-name">Ваше имя:</label>
-          <input id="write-us-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-        </p>
-        <p class="write-us-item">
+          <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="write-us-item">
           <label for="write-us-email">Ваше e-mail:</label>
-          <input id="write-us-email" type="email" name="email" value="" placeholder="example@gmail.com">
-        </p>
+          <input id="write-us-email" type="email" name="email" placeholder="example@gmail.com">
+        </div>
         <textarea name="write-us-text-message" placeholder="В свободной форме"></textarea>
-        <button class="button" type="submit">Отправить</button>
+        <button class="btn" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">x</button>
+      <button class="modal-close" type="button"></button>
     </section>
 
+    <section class="map-popup">            
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947363!2d37.52742931601626!3d55.687034004529885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sby!4v1551614295233" 
+      width="100%" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <button class="modal-close" type="button"></button>
+    </section>
+    
+  <script src="js/script.js"></script>
+    
   </body>
 </html>
