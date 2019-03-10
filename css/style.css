@@ -208,7 +208,8 @@ fieldset,
 .user-navigation-footer,
 .navigation-footer,
 .filter ul,
-.sorting ul,
+.sorting-how,
+.sorting-arrow,
 .catalog-list,
 .pagination-list,
 .product-list,
@@ -822,14 +823,6 @@ fieldset,
     padding-bottom: 40px;
 }
 
-.filter-price-box {
-    border-top: 2px solid #000;
-    display: flex;
-    flex-direction: column;
-
-    padding-bottom: 40px;
-}
-
 .filter-bluetooth-box {
     padding-bottom: 20px;
 }
@@ -856,18 +849,159 @@ fieldset,
     background-color: transparent;
 }
 
+.filter-option {
+    position: relative;    
+}
+
+.custom-checkbox {
+    position: absolute; 
+    left: 0;
+    top: 6px;   
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.filter-input-checkbox + .custom-checkbox {
+    background-image: url('../img/checkbox-off.svg');
+    
+}
+
+.filter-input-checkbox:checked + .custom-checkbox {
+    background-image: url('../img/checkbox-on.svg');
+    
+}
+
+.filter-input-radio + .custom-radio {
+    display: block;
+    position: absolute; 
+    left: 0;
+    top: 6px;   
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    border: 5px solid #000;    
+}
+
+.filter-input-radio:checked + .custom-radio::before {
+    content: '';    
+    display: block;
+    height: 9px;
+    width: 9px;
+    border-radius: 100%;   
+
+    position: absolute; 
+    top: 3px;
+    left: 25%;    
+    
+    background-color: #000;     
+}
+
+.filter-option label {
+    padding-left: 40px;
+
+    font-family: 'gilroylight', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 300;
+    color: #000;
+}
+
+.filter-price-box {
+    border-top: 2px solid #000;
+    padding-bottom: 40px;
+}
+
+.range-controls {
+    position: relative;
+    
+    height: 10px;    
+    padding-bottom: 5px;  
+}
+  
+  .range-controls .scale {
+    height: 2px;
+  
+    background: #d7dcde;
+}
+  
+  .range-controls .bar {
+    width: 70%;
+    height: 2px;
+  
+    background: #a2c742;
+}
+  
+  .range-controls .toggle {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    
+    width: 4px;
+    height: 4px;
+    padding: 0;
+  
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+}
+  
+  .range-controls .toggle-min {
+    left: 0px;
+}
+  
+  .range-controls .toggle-max {
+    left: 120px;
+}
+  
+  .price-controls {
+    font-size: 0;
+    opacity: .3;
+}
+  
+  .price-controls label {    
+    font-family: 'gilroylight', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #000;
+}
+  
+  .price-controls input {
+    width: 44px;
+    
+    font-family: 'gilroylight', Arial, sans-serif;
+    font-size: 14px;    
+    color: #000;
+    
+    border: none;
+    border-radius: 5px;
+    background: #EEEEEE;
+}
+  
+  .min-price {
+    text-align: right;
+    margin-right: 40px;
+}
+
 .sorting {
     display: flex;
     align-items: center;
-    background-color: #ebebeb
+    background-color: #ebebeb;
+    padding: 22px 0;
 }
 
 .sorting h2 {    
-    padding: 25px 55px 25px 60px;
+    padding-left: 70px;
 }
 
 .sorting-how {
-    display: flex;    
+    display: flex;
+    margin-left: 55px;   
 }
 
 .sorting-how li:not(last-child) {
@@ -881,8 +1015,16 @@ fieldset,
     color: #000;
 }
 
-.sorting-price {
+.sorting-price.current {
     font-weight: 800;
+}
+
+.sorting-type {
+    opacity: .3;
+}
+
+.sorting-popular {
+    opacity: .3;
 }
 
 .catalog-block {
@@ -890,6 +1032,38 @@ fieldset,
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+}
+
+.sorting-arrow {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 21.30%;
+    width: 50px;
+} 
+
+.sorting-up,
+.sorting-down {
+    width: 20px;
+    height: 16px;
+    position: relative;
+    color: #fff;    
+}
+
+.sorting-up a,
+.sorting-down a {    
+    position: absolute; 
+    border: 5px solid transparent;    
+    left: 25%;
+}
+
+.sorting-up.current a {    
+    border-bottom: 10px solid #000;
+    opacity: .3;         
+}
+
+.sorting-down a {
+    border-top: 10px solid #000;
+    top: 5px;   
 }
 
 .catalog {
@@ -1154,5 +1328,5 @@ footer {
 }
 
 .modal {
-    display: none;
+    display: block;
 }
