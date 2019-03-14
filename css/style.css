@@ -47,7 +47,7 @@ a {
 }
 
 .container {
-    max-width: 1160px;
+    width: 1160px;
     margin: 0 auto;
 }
 
@@ -89,7 +89,7 @@ a {
 }
 
 .page-title {
-    margin: 45px 60px 45px;
+    margin: 38px 64px 20px;
     font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 47px;
     line-height: 48px;
@@ -98,7 +98,7 @@ a {
 
 .main-header .container {
     position: relative;
-    margin-top: 40px; 
+    margin-top: 50px; 
     background-color: #f7e296;
     min-height: 300px;    
 }
@@ -398,7 +398,9 @@ fieldset{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 39px 0;    
+    margin-top: 39px;
+    margin-bottom: 41px;
+    margin-left: 5px;   
 }
 
 .slider-item:nth-child(2),
@@ -411,7 +413,7 @@ fieldset{
 }
 
 .slider-column:first-child {
-    width: 520px;    
+    width: 515px;    
 }
 
 .slider-column:first-child img {
@@ -421,7 +423,7 @@ fieldset{
 
 .slider-column:last-child {
     position: relative;
-    width: 520px;
+    width: 525px;
     padding-left: 45px;
 }
 
@@ -431,8 +433,8 @@ fieldset{
     height: 8px;
     background-color: #fff;
     position: absolute;
-    left: 43px;
-    top: 50px;
+    left: 55px;
+    top: 44px;
 }
 
 .slider-numb-item {
@@ -442,7 +444,7 @@ fieldset{
     color: #fff;
     font-weight: 800;
     position: absolute;
-    top: -5px;
+    top: -7px;
     right: -10px;
 }
 
@@ -452,9 +454,15 @@ fieldset{
     line-height: 56px;
     font-weight: 800;
     color: #000;
-    margin-top: 90px;
-    margin-bottom: 17px;
+    margin-top: 86px;
+    margin-bottom: 20px;
+    margin-left: 3px;
     letter-spacing: 0.5px;
+}
+
+.slider-text {
+    margin-left: 3px;
+    letter-spacing: .2px;
 }
 
 .slider-column p:first-child {
@@ -480,7 +488,7 @@ fieldset{
 .slider-table tr:last-child {
     font-family: inherit;
     font-size: 13px;
-    line-height: 20px;
+    line-height: 33px;
     font-weight: 300;
     color: #000;
 }
@@ -497,7 +505,7 @@ fieldset{
     width: 12px;   
     
     background-color: #fff;
-    margin-right: 21px;
+    margin-right: 21.5px;
     padding: 0;
 }
 
@@ -518,8 +526,13 @@ fieldset{
     margin-right: 22px;
 }
 
-.slider-table {
-    width: 100%;
+.slider-table td {
+    width: 135px;
+}
+
+.slider-table td:first-child,
+.slider-table td:last-child {
+    width: 155px;
 }
 
 .product-list {    
@@ -529,7 +542,7 @@ fieldset{
 }
 
 .product-menu h3 {
-    margin-top: 40px;
+    margin-top: 27px;
     margin-bottom: 0;
 }
 
@@ -547,8 +560,12 @@ fieldset{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    box-sizing: border-box;
     background-color: #f7e296;
+}
+
+.monopod-for-selfie {
+    padding-top: 40px;
 }
 
 .product-menu .product-item .product-img-bg:hover {
@@ -563,12 +580,12 @@ fieldset{
 .features {
     display: flex;
     background-color: #e5e5e5;
-    margin-top: 185px;
+    margin-top: 175px;
 }
 
 .features-box {
     display: flex;
-    min-height: 280px;    
+    min-height: 288px;    
 }
 
 .features-box:not(:nth-child(2)) {
@@ -582,7 +599,7 @@ fieldset{
 .features-column:first-child .features-list {
     display: flex;
     flex-direction: column;
-    min-height: 320px;
+    min-height: 319px;
     justify-content: center;
     border-right: 7px solid black;
     margin-top: -100px;    
@@ -600,8 +617,9 @@ fieldset{
     font-weight: 800;
     color: #000;
     margin-top: -28px;
-    margin-left: 100px;
+    margin-left: 122px;
     margin-bottom: 0;
+    letter-spacing: 1px;
 }
 
 .delivery::after {
@@ -627,14 +645,15 @@ fieldset{
 
 .features-column:last-child p {
     box-sizing: border-box;
-    margin-left: 100px;
+    margin-left: 120px;
     width: 465px;
     margin-top: 30px;
     padding-right: 10px;
 }
 
 .features .feature-item-current {
-    margin-bottom: 35px;
+    margin-bottom: 22px;
+    margin-left: 5px;
 }
 
 .feature-item-current .feature-btn,
@@ -655,8 +674,8 @@ fieldset{
     background-color: #000000;   
 }
 
-.feature-item:not(:last-child) {
-    margin-bottom: 20px;
+.feature-item:last-child {
+    margin-top: 20px;
 }
 
 .feature-item .feature-btn {
@@ -718,7 +737,8 @@ fieldset{
     display: flex;
     justify-content: space-around;
     padding: 0;
-    margin: 80px 0;
+    margin-top: 95px;
+    margin-bottom: 85px;    
 }
 
 .brand-item a {
@@ -745,7 +765,7 @@ fieldset{
 .prefooter-column {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 85px;
+    margin-bottom: 87px;
 }
 
 .about-us {
@@ -758,13 +778,13 @@ fieldset{
 
 .about-us ul {
     list-style: none;
-    margin-top: 55px;
+    margin-top: 67px;
     padding: 0;
-    margin-bottom: 55px;
+    margin-bottom: 59px;
 }
 
 .map-img {
-    margin-bottom: 59px;
+    margin-bottom: 63px;
     cursor: pointer;
 }
 
@@ -777,7 +797,8 @@ fieldset{
     line-height: 48px;
     color: #000;
     margin: 0;
-    padding: 50px 0;
+    padding-top: 49px;
+    padding-bottom: 45px;
 }
 
 .about-us h2::before, 
@@ -798,7 +819,7 @@ fieldset{
 }
 
 .about-us .about-us-text:not(:last-child) {    
-    margin-bottom: 40px;
+    margin-bottom: 28px;
 }
 
 .contacts p {    
@@ -834,16 +855,20 @@ fieldset{
     margin-bottom: 90px;    
 }
 
+.about-us .btn {   
+    padding: 12px 24px;
+}
+
 .breadcrumbs {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
     margin-left: 60px;    
 }
 
 .breadcrumbs li {
     position: relative;
-    padding-right: 35px;
+    padding-right: 38px;
 }
 
 .breadcrumbs a, 
@@ -883,7 +908,7 @@ fieldset{
 }
 
 .filter-block {
-    width: 34.5%;
+    width: 35%;
     background-color: #eeeeee;
     display: flex;
     flex-direction: column;
@@ -908,7 +933,8 @@ fieldset{
     font-weight: 800;
     text-transform: uppercase;
     color: #000;
-    margin: 0;    
+    margin: 0;
+    letter-spacing: 3px;    
 }
 
 .filter-container { 
@@ -920,25 +946,22 @@ fieldset{
 
 .filter-title {
     padding: 25px 0;
-    width: 270px;
+    width: 269px;
 }
 
 .filter-color-box {
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
     
-    padding-bottom: 40px;
+    padding-bottom: 29px;
 }
 
 .filter-bluetooth-box {
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 }
 
 .filter-price-box label,
 .filter-form legend {
-    padding-top: 12px;
-    padding-bottom: 25px;
-
     font-family: 'gilroyextrabold', Arial, sans-serif;    
     font-size: 18px;
     line-height: 24px;
@@ -946,8 +969,23 @@ fieldset{
     color: #000; 
 }
 
+.filter-price-box legend {
+    padding-top: 11px;
+    padding-bottom: 33px;
+}
+
+.filter-color-box legend {
+    padding-top: 12px;
+    padding-bottom: 18px;
+}
+
+.filter-bluetooth-box legend {
+    padding-top: 11px;
+    padding-bottom: 19px;
+}
+
 .filter-form {
-    margin: 70px 0 0 60px;
+    margin: 67px 0 0 57px;
     padding-right: 65px;
 }
 
@@ -1027,14 +1065,14 @@ fieldset{
 
 .filter-price-box {
     border-top: 2px solid #000;
-    padding-bottom: 40px;
+    padding-bottom: 26px;
 }
 
 .range-controls {
     position: relative;
     
     height: 10px;    
-    padding-bottom: 5px;  
+    padding-bottom: 3px;  
 }
   
 .range-controls .scale {
@@ -1044,7 +1082,7 @@ fieldset{
 }
   
 .range-controls .bar {
-    width: 70%;
+    width: 60%;
     height: 2px;
   
     background: #a2c742;
@@ -1067,11 +1105,11 @@ fieldset{
 }
   
 .range-controls .toggle-min {
-    left: 0px;
+    left: -4px;
 }
   
 .range-controls .toggle-max {
-    left: 120px;
+    left: 109px;
 }
   
 .price-controls {
@@ -1101,23 +1139,25 @@ fieldset{
   
 .min-price {
     text-align: right;
-    margin-right: 40px;
+    margin-right: 27px;
 }
 
 .sorting {
     display: flex;
     align-items: center;
     background-color: #ebebeb;
-    padding: 22px 0;
+    padding: 21px 0;
+    letter-spacing: -0.5px;
+
 }
 
 .sorting h2 {    
-    padding-left: 70px;
+    padding-left: 73px;
 }
 
 .sorting-how {
     display: flex;
-    margin-left: 55px;   
+    margin-left: 24px;   
 }
 
 .sorting-how li:not(last-child) {
@@ -1146,7 +1186,7 @@ fieldset{
 }
 
 .catalog-block {
-    width: 65.5%;
+    width: 65%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -1155,7 +1195,7 @@ fieldset{
 .sorting-arrow {
     display: flex;
     justify-content: space-between;
-    margin-left: 21.30%;
+    margin-left: 22.4%;
     width: 50px;
 } 
 
@@ -1205,6 +1245,7 @@ fieldset{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-bottom: 13px;
 }
 
 .catalog-item {
@@ -1236,7 +1277,7 @@ fieldset{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 35px;       
+    margin-bottom: 31px;       
 }
 
 .img-box img {
@@ -1287,7 +1328,7 @@ fieldset{
     display: flex;
     justify-content: space-between;    
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 46px;
 }
 
 .catalog-title-box h3 {
@@ -1297,15 +1338,15 @@ fieldset{
 
 .pagination-list {
     display: flex;
-    padding: 25px 0;
+    padding: 21px 0;
     background-color: #ebebeb;
-    margin-top: 20px;
-    margin-bottom: 80px;    
+    margin-top: 15px;
+    margin-bottom: 73px;    
 }
 
 .pagination-item.prev a,
 .pagination-item.next a {    
-    padding: 30px;
+    padding: 25px 30px;
 }
 
 .pagination-item.prev a:hover,
@@ -1319,7 +1360,7 @@ fieldset{
 }
 
 .pagination-item.prev {    
-    margin-right: auto;
+    margin-right: 209px;
 }
 
 .pagination-item.next {
@@ -1335,10 +1376,11 @@ fieldset{
     font-weight: 800;
     color: #000;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .pagination-item.numb:not(:last-child) {
-    margin-left: 30px;
+    margin-left: 29px;
 }
 
 .pagination-item.numb {
@@ -1379,19 +1421,18 @@ footer {
 }
 
 .cart-footer {
-    display: flex;
-    align-items: center;         
+    display: flex;          
 }
 
 .cart-footer .user-navigation-item  {
-    padding-left: 35px;
+    padding-left: 31px;
+    letter-spacing: 0.1px;
 }
 
 .row-middle-footer {
-    display: flex;
-    justify-content: space-between;
+    display: flex;    
     align-items: center;
-    padding-top: 35px;
+    padding-top: 22px;
 }
 
 .row-middle-footer p {
@@ -1402,6 +1443,7 @@ footer {
     font: inherit;
     color: #fff;
     margin-bottom: 0;
+    letter-spacing: .34px;
 }
 
 .row-middle-footer a {
@@ -1411,16 +1453,18 @@ footer {
     font-weight: 800;
     color: #fff;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .navigation-footer {
     display: flex;
-    justify-content: space-around;    
+    margin-right: auto;
+    margin-left: 165px;
 }
 
-.navigation-footer li {
-    padding-right: 35px;
-    letter-spacing: 2px;
+.navigation-footer li:not(:last-child) {
+    padding-right: 38px;
+    letter-spacing: 4px;
 }
 
 .navigation-footer li:first-child, .social-img a:last-child {
@@ -1434,7 +1478,7 @@ footer {
 .login-link-footer {
     background-image: url('../img/user-footer.svg');
     background-repeat: no-repeat;
-    background-position: 10px 50%;
+    background-position: 6px 30%;
 }
 
 .user-navigation-item.login-link-logout {
@@ -1444,23 +1488,23 @@ footer {
 .cart-footer .compare-footer {
     background-image: url('../img/compare-footer.svg');
     background-repeat: no-repeat;
-    background-position: 10px 50%;
-    margin-left: 35px;
+    background-position: 9px 38%;
+    margin-left: 33px;
 }
 
 .cart-item-footer {
     background-image: url('../img/cart-footer.svg');
     background-repeat: no-repeat;
-    background-position: 10px 50%;
-    margin-left: 30px;
+    background-position: 10px 33%;
+    margin-left: 32px;
 }
 
 .row-bottom-footer {
     position: relative;
     display: flex;
     align-items: center;    
-    height: 45px;
-    padding-top: 70px;
+    height: 48px;
+    padding-top: 59px;
 }
 
 .footer-style-line {
@@ -1469,12 +1513,13 @@ footer {
     height: 8px;
     background-color: #ffc600;
     position: absolute;
+    top: 75px;
 }
 
 .social-img {
     display: flex;
     align-items: center; 
-    margin-right: auto;
+    margin-right: 479px;
     margin-left: auto;       
 }
 
@@ -1541,8 +1586,9 @@ footer {
     animation: bounce .6s;
 }
 
-.modal.error {
-    animation: shake .6s;
+.modal.error input[type="text"],
+.modal.error input[type="email"] {
+    background-color: #edb5b5;
 }
 
 .modal-close,
