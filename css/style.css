@@ -89,11 +89,12 @@ a {
 }
 
 .page-title {
-    margin: 38px 64px 20px;
+    margin: 38px 60px 20px;
     font-family: 'gilroyextrabold', Arial, sans-serif;
     font-size: 47px;
     line-height: 48px;
     color: #000;
+    word-spacing: 4px;
 }
 
 .main-header .container {
@@ -121,7 +122,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding-top: 35px;
-    padding-left: 60px;
+    padding-left: 62px;
 }
 
 .header-middle {
@@ -156,7 +157,7 @@ fieldset{
 
 .search input[type="search"] {
     width: 355px;    
-    padding: 8px 40px 8px;    
+    padding: 8px 35px 8px;    
     background-color: transparent;
     background-image: url('../img/search.svg');
     background-repeat: no-repeat;
@@ -273,7 +274,7 @@ fieldset{
 }
 
 .login-link-logout {
-    padding-left: 20px;
+    padding-left: 16px;
 }
 
 .login-link-logout a {
@@ -288,11 +289,11 @@ fieldset{
 
 .cart .compare {
     padding-left: 35px;
-    margin-right: 30px;
+    margin-right: 26px;
 
     background-image: url('../img/compare.svg');
     background-repeat: no-repeat;
-    background-position: 15% 50%;
+    background-position: 16% 50%;
 }
 
 .cart-item {
@@ -862,7 +863,7 @@ fieldset{
 .breadcrumbs {
     display: flex;
     align-items: center;
-    margin-bottom: 42px;
+    margin-bottom: 44px;
     margin-left: 60px;    
 }
 
@@ -945,7 +946,7 @@ fieldset{
 }
 
 .filter-title {
-    padding: 25px 0;
+    padding: 23px 0;
     width: 269px;
 }
 
@@ -970,8 +971,8 @@ fieldset{
 }
 
 .filter-price-box legend {
-    padding-top: 11px;
-    padding-bottom: 33px;
+    padding-top: 12px;
+    padding-bottom: 32px;
 }
 
 .filter-color-box legend {
@@ -985,7 +986,7 @@ fieldset{
 }
 
 .filter-form {
-    margin: 67px 0 0 57px;
+    margin: 69px 0 0 57px;
     padding-right: 65px;
 }
 
@@ -1065,7 +1066,7 @@ fieldset{
 
 .filter-price-box {
     border-top: 2px solid #000;
-    padding-bottom: 26px;
+    padding-bottom: 25px;
 }
 
 .range-controls {
@@ -1142,22 +1143,28 @@ fieldset{
     margin-right: 27px;
 }
 
-.sorting {
+.sorting {    
+    background-color: #ebebeb;    
+}
+
+.sorting-container {
     display: flex;
     align-items: center;
     background-color: #ebebeb;
-    padding: 21px 0;
+    padding: 20px 0;
     letter-spacing: -0.5px;
-
+    width: 833px;
 }
 
 .sorting h2 {    
-    padding-left: 73px;
+    padding-left: 72px;
+    letter-spacing: 3.4px;
 }
 
 .sorting-how {
     display: flex;
-    margin-left: 24px;   
+    margin-left: 21px;
+    letter-spacing: -0.5px; 
 }
 
 .sorting-how li:not(last-child) {
@@ -1436,13 +1443,14 @@ footer {
 }
 
 .row-middle-footer p {
-    margin: 0;
+    font: inherit;
+    color: #fff;    
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0;    
 }
 
-.row-middle-footer p {
-    font: inherit;
-    color: #fff;
-    margin-bottom: 0;
+.row-middle-footer p:first-child {
     letter-spacing: .34px;
 }
 
@@ -1453,18 +1461,17 @@ footer {
     font-weight: 800;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 3.2px;
 }
 
 .navigation-footer {
     display: flex;
     margin-right: auto;
-    margin-left: 165px;
+    margin-left: 162px;
 }
 
 .navigation-footer li:not(:last-child) {
-    padding-right: 38px;
-    letter-spacing: 4px;
+    padding-right: 38px;    
 }
 
 .navigation-footer li:first-child, .social-img a:last-child {
