@@ -29,6 +29,7 @@ body {
     line-height: 30px;
     font-weight: 300;
     color: #464646;
+    min-width: 1160px;
 }
 
 a {
