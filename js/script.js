@@ -72,9 +72,9 @@ var link = document.querySelector(".btn-popup"),
         mapPopup.classList.remove("active");
       });
     
-      window.addEventListener("keydown", function (evt) {
-        evt.preventDefault();
+      window.addEventListener("keydown", function (evt) {        
         if (evt.keyCode === 27) {
+          evt.preventDefault();
           if (mapPopup.classList.contains("active")) {
             mapPopup.classList.remove("active");
           }
