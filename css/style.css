@@ -1165,19 +1165,17 @@ fieldset{
 }
 
 .sorting {    
-    background-color: #ebebeb;  
-    height: 70px;  
+    background-color: #ebebeb;     
 }
 
 .sorting-container {
     display: flex;
     align-items: center;
     background-color: #ebebeb;
-    padding-top: 17px;
+    padding-top: 18px;
     padding-left: 72px;
-    padding-bottom: 17px;
-    letter-spacing: -0.5px;
-    width: 760px;
+    padding-bottom: 21px;
+    letter-spacing: -0.5px;    
 }
 
 .sorting h2 {   
@@ -1217,8 +1215,7 @@ fieldset{
 
 .catalog-block {
     width: 65%;
-    display: flex;
-    justify-content: flex-start;
+    display: flex;    
     flex-direction: column;
 }
 
@@ -1274,8 +1271,7 @@ fieldset{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-start;
-    margin-bottom: 13px;
+    align-items: flex-start;    
 }
 
 .catalog-item {
@@ -1358,7 +1354,7 @@ fieldset{
     display: flex;
     justify-content: space-between;    
     width: 100%;
-    margin-bottom: 46px;
+    margin-bottom: 48px;
 }
 
 .catalog-title-box h3 {
@@ -1369,10 +1365,10 @@ fieldset{
 
 .pagination-list {
     display: flex;
-    padding: 21px 0;
+    padding: 18px 0;
     background-color: #ebebeb;
-    margin-top: 12px;
-    margin-bottom: 75px;    
+    margin-top: -12px;
+    margin-bottom: 78px;    
 }
 
 .pagination-item.prev a,
