@@ -15,8 +15,9 @@
       <div class="header-top">
         <a href="index.html" class="logo header-logo"><img src="img/logo-device.svg" width="163" height="35" alt="logo"></a>
         <form class="search-field" method="get">
-          <label class="search"><input type="search" placeholder="Поиск по сайту">
-          <button type="submit" class="search-button">Найти</button></label>
+          <label for="search"></label>
+          <input type="search" name="search" class="search" placeholder="Поиск по сайту">
+          <button type="submit" class="search-button">Найти</button>
         </form>
         <ul class="user-navigation">
           <li class="login-link"><a href="#">Валентин Петухов</a></li>
@@ -54,7 +55,7 @@
     </div>     
   </header>
 
-  <main>
+  <main class="catalog-main">
     <div class="container">
       <h1 class="page-title">Моноподы для селфи</h2>
       <ul class="breadcrumbs">
@@ -62,12 +63,27 @@
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
-    </div>  
-    <div class="catalog-container">
-      <div class="filter-block">
-        <div class="filter-container">
-          <h2 class="filter-title">Фильтр:</h2>
-        </div>        
+      <div class="page-bar">
+          <div class="filter-head">
+            <h2 class="filter-title">Фильтр:</h2>
+          </div>
+          <section class="sorting">
+              <div class="sorting-container">
+                <h2>Сортировка:</h2>
+                <ul class="sorting-how">
+                  <li class="sorting-price current"><a href="#">По цене</a></li>
+                  <li class="sorting-type"><a href="#">По типу</a></li>
+                  <li class="sorting-popular"><a href="#">По популярности</a></li>
+                </ul>
+                <ul class="sorting-arrow">
+                  <li class="sorting-up current"><a href="#"></a></li>
+                  <li class="sorting-down"><a href="#"></a></li>
+                </ul>
+              </div>                  
+            </section>  
+        </div> 
+      <div class="catalog-container">       
+      <div class="filter-block">              
         <section class="filter">                   
             <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">              
                 <fieldset class="filter-item">
@@ -156,21 +172,7 @@
           </section>
         </div>      
       
-      <div class="catalog-block">
-        <section class="sorting">
-          <div class="sorting-container">
-            <h2>Сортировка:</h2>
-            <ul class="sorting-how">
-              <li class="sorting-price current"><a href="#">По цене</a></li>
-              <li class="sorting-type"><a href="#">По типу</a></li>
-              <li class="sorting-popular"><a href="#">По популярности</a></li>
-            </ul>
-            <ul class="sorting-arrow">
-              <li class="sorting-up current"><a href="#"></a></li>
-              <li class="sorting-down"><a href="#"></a></li>
-            </ul>
-          </div>                  
-        </section>
+      <div class="catalog-block">        
         <section class="catalog">      
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -228,6 +230,8 @@
         </section>
       </div>
     </div>
+    </div>  
+    
   </main>
 
   <footer>
