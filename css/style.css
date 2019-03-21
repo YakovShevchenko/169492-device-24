@@ -1098,18 +1098,39 @@ fieldset{
     padding-bottom: 23px;
 }
 
-.filter-color-box {
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-    
-    padding-bottom: 29px;
+.filter-item.price {
+    padding-bottom: 25px;
 }
 
-.filter-bluetooth-box {
-    padding-bottom: 24px;
+.filter-box-title.price {
+    padding-bottom: 35px;
 }
 
-.filter-price-box label,
+.filter-item.color {
+    padding-bottom: 31px;
+}
+
+.filter-box-title.color {
+    padding-bottom: 18px;
+}
+
+.filter-item.bluetooth {
+    padding-bottom: 26px;
+}
+
+.filter-box-title.bluetooth {
+    padding-bottom: 19px;
+}
+
+.filter-box-title::before {
+    display: block;
+    width: 200px;
+    height: 2px;
+    margin-bottom: 10px;
+    content: '';
+    background-color: #000;
+}
+
 .filter-form legend {
     font-family: 'gilroyextrabold', Arial, sans-serif;    
     font-size: 18px;
@@ -1118,23 +1139,8 @@ fieldset{
     color: #000; 
 }
 
-.filter-price-box legend {
-    padding-top: 9px;
-    padding-bottom: 35px;
-}
-
-.filter-color-box legend {
-    padding-top: 12px;
-    padding-bottom: 18px;
-}
-
-.filter-bluetooth-box legend {
-    padding-top: 11px;
-    padding-bottom: 19px;
-}
-
 .filter-form {
-    padding: 71px 68px 0 57px;
+    padding: 69px 68px 0 57px;
     
 }
 
@@ -1150,7 +1156,7 @@ fieldset{
 .custom-checkbox {
     position: absolute; 
     left: 0;
-    top: 6px;   
+    top: 8px;   
     width: 22px;
     height: 22px;
     background-repeat: no-repeat;
