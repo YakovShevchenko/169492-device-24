@@ -16,7 +16,7 @@
         <a href="index.html" class="logo header-logo"><img src="img/logo-device.svg" width="163" height="35" alt="logo"></a>
         <form class="search-field" method="get">
           <label for="search"></label>
-          <input type="search" name="search" class="search" placeholder="Поиск по сайту">
+          <input type="search" name="search" id="search" class="search" placeholder="Поиск по сайту">
           <button type="submit" class="search-button">Найти</button>
         </form>
         <ul class="user-navigation">
@@ -57,7 +57,7 @@
 
   <main class="catalog-main">
     <div class="container">
-      <h1 class="page-title">Моноподы для селфи</h2>
+      <h2 class="page-title">Моноподы для селфи</h2>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
@@ -86,9 +86,8 @@
       <div class="filter-block">              
         <section class="filter">                   
             <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">              
-                <fieldset class="filter-item">
-                  <div class="filter-price-box">    
-                    <legend>Стоимость:</legend>
+                <fieldset class="filter-item price">                    
+                    <legend class="filter-box-title price">Стоимость:</legend>
                     <div class="range-filter">
                       <div class="range-controls">
                         <div class="scale">
@@ -101,12 +100,10 @@
                         <label class="min-price">от <input name="min-price" type="text" value="0"></label>
                         <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
                       </div>
-                    </div>
-                  </div>
+                    </div>                  
                 </fieldset>              
-              <fieldset>
-                <div class="filter-color-box">
-                  <legend>Цвет</legend>
+              <fieldset class="filter-item color">                
+                  <legend class="filter-box-title color">Цвет</legend>
                   <ul>
                     <li class="filter-option">
                       <label for="filter-color-black">
@@ -143,12 +140,10 @@
                         Розовый
                       </label>
                     </li>              
-                  </ul>
-                </div> 
+                  </ul>                
               </fieldset>
-              <fieldset>
-                <div class="filter-bluetooth-box">
-                <legend>Bluetooth:</legend>
+              <fieldset class="filter-item bluetooth">              
+                <legend class="filter-box-title bluetooth">Bluetooth:</legend>
                   <ul>
                     <li class="filter-option">
                       <label for="bluetooth-on">
@@ -164,8 +159,7 @@
                         Нет
                       </label>
                     </li>              
-                  </ul>
-                </div>
+                  </ul>               
               </fieldset>
               <button type="submit" class="btn filter-button">Показать</button>
             </form>          
@@ -237,7 +231,7 @@
   <footer>
     <div class="container">    
       <div class="row-top-footer">
-        <a href="index.html" class="logo footer-logo"><img src="img/logo-device-footer.svg" width="163" height="35"></a>
+        <a href="index.html" class="logo footer-logo"><img src="img/logo-device-footer.svg" alt="footer-logo" width="163" height="35"></a>
         <ul class="user-navigation-footer cart-footer">
           <li class="user-navigation-item login-link-footer"><a href="https://htmlacademy.ru/profile/jakeshev">Валентин Петухов</a></li>
           <li class="user-navigation-item login-link-logout"><a href="#">Выйти</a></li>        
