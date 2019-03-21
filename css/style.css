@@ -73,16 +73,13 @@ a {
     position: absolute;
     top: 20px;
     left: 0;    
-    background-color: #f0c52e;
-    transition: all ease .3s;   
-    
+    background-color: #f0c52e;    
     z-index: -1;
 }
 
 .btn:hover::before {    
     top: 0;
-    height: 100%;
-    transition: all ease .3s;   
+    height: 100%;     
 }
 
 .btn:active {
@@ -95,14 +92,15 @@ a {
     font-size: 47px;
     line-height: 48px;
     color: #000;
-    word-spacing: 4px;
+    word-spacing: 1px;
+    letter-spacing: .38px;
 }
 
 .main-header .container {
     position: relative;
-    margin-top: 50px; 
+    margin-top: 47px; 
     background-color: #f7e296;
-    min-height: 300px;    
+    min-height: 298px;    
 }
 
 .page-header .container {
@@ -166,16 +164,17 @@ fieldset{
 }
 
 .search-field .search {
-    width: 355px;    
+    width: 440px;    
     padding: 8px 35px 8px;    
     background-color: transparent;
     background-image: url('../img/search.svg');
     background-repeat: no-repeat;
-    background-position: 0 50%;
+    background-position: 3px 50%;
     color: #000;
     font-size: 15px;
     line-height: 30px;
-    border: none;       
+    border: none;
+    box-sizing: border-box;       
 }
 
 .search-field input::placeholder {    
@@ -199,12 +198,12 @@ fieldset{
     opacity: 0;   
     background: transparent;
     border: 2px solid #000;
-    padding: 13px 20px;
+    padding: 14px 17px;
     cursor: pointer;
     z-index: 5;
     position: absolute;
-    right: 0;
-    top: 1;
+    right: -82px;
+    top: -1px;
 }
 
 .search-button:hover {
@@ -275,11 +274,12 @@ fieldset{
 
 .user-navigation {
     display: flex;
-    width: 90x;   
+    width: 175px;   
 }
 
 .page-header .user-navigation {
-    margin-left: 150px;
+    margin-left: 64px;
+    width: 240px; 
 }
 
 .login-link {
@@ -409,7 +409,7 @@ fieldset{
     position: relative;
     z-index: 1;
     width: 1040px;
-    margin: -122px auto 95px;        
+    margin: -119px auto 95px;        
 }
 
 .slider-btn {
@@ -681,6 +681,7 @@ fieldset{
     width: 465px;
     margin-top: 32px;
     padding-right: 10px;
+    letter-spacing: .23px;
 }
 
 .features .feature-item-current {
@@ -803,7 +804,7 @@ fieldset{
 }
 
 .about-us {
-    width: 470px;
+    width: 473px;
 }
 
 .contacts {
@@ -812,9 +813,9 @@ fieldset{
 
 .about-us ul {
     list-style: none;
-    margin-top: 67px;
+    margin-top: 66px;
     padding: 0;
-    margin-bottom: 59px;
+    margin-bottom: 60px;
 }
 
 .map-img {
@@ -847,12 +848,12 @@ fieldset{
     left: 0;
 }
 
-.about-us p,
+.about-us .about-us-text,
 .contacts p {
     margin-top: 0;    
 }
 
-.about-us .about-us-text:not(:last-child) {    
+.about-us .about-us-text {    
     margin-bottom: 28px;
 }
 
@@ -897,12 +898,17 @@ fieldset{
     display: flex;
     align-items: center;
     margin-bottom: 44px;
-    margin-left: 58px;    
+    margin-left: 58px;
+    letter-spacing: .1px;    
 }
 
 .breadcrumbs li {
     position: relative;
-    padding-right: 38px;
+    padding: 0 17px 0 22px;    
+}
+
+.breadcrumbs li:first-child {
+    padding-left: 0;
 }
 
 .breadcrumbs a, 
@@ -917,16 +923,12 @@ fieldset{
 .breadcrumbs li:not(:last-child)::before {
     content: '';
     position: absolute;
-    right: 15px;
-    top: 13px;
-    height: 4px;
-    width: 4px;
-    border-bottom: 2px solid #000;
-    border-right: 2px solid #000;
-    border-left: transparent;
-    border-top: transparent;
-    
-    transform: rotate(-46deg);
+    right: -10px;
+    top: 14px;
+    height: 10px;
+    width: 10px;
+    background-image: url(../img/nav-arrow.svg);
+    background-repeat: no-repeat;    
 }
 
 .breadcrumbs a:hover {
@@ -1443,7 +1445,7 @@ fieldset{
 }
 
 .pagination-item.numb:not(:last-child) {
-    margin-left: 29px;
+    margin-left: 28px;
 }
 
 .pagination-item.numb {
@@ -1469,7 +1471,7 @@ fieldset{
 
 footer {    
     background-color: #464646;
-    padding-top: 65px;  
+    padding-top: 63px;  
     padding-bottom: 55px;
 }
 
