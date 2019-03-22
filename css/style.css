@@ -125,15 +125,15 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 34px;
-    padding-left: 62px;
+    padding-top: 33px;
+    margin-left: 60px;
 }
 
 .header-middle {
     position: relative;
     
     display: flex;
-    padding-top: 28px;
+    padding-top: 27px;
     padding-left: 60px;
     align-items: center;        
 }
@@ -156,25 +156,21 @@ fieldset{
 
 .search-field {
     position: relative;
+    margin-right: auto;    
 }
 
 .search-field .search {
-    display: flex;    
-    width: 440px;
-}
-
-.search-field .search {
-    width: 440px;    
-    padding: 8px 35px 8px;    
+    width: 358px;    
+    padding: 13px 0 16px 37px;    
     background-color: transparent;
     background-image: url('../img/search.svg');
     background-repeat: no-repeat;
     background-position: 3px 50%;
     color: #000;
-    font-size: 15px;
-    line-height: 30px;
+    font-size: 15px;    
     border: none;
-    box-sizing: border-box;       
+    box-sizing: border-box;
+    height: 48px;       
 }
 
 .search-field input::placeholder {    
@@ -187,7 +183,7 @@ fieldset{
 
 .search-field input:focus {    
     border-bottom: 2px solid #000;
-    outline: none;    
+    outline: none;     
 }
 
 .search-field input::placeholder:focus {
@@ -274,12 +270,12 @@ fieldset{
 
 .user-navigation {
     display: flex;
-    width: 175px;   
+    width: 257px;   
 }
 
 .page-header .user-navigation {
     margin-left: 64px;
-    width: 240px; 
+    width: 256px; 
 }
 
 .login-link {
@@ -409,7 +405,7 @@ fieldset{
     position: relative;
     z-index: 1;
     width: 1040px;
-    margin: -119px auto 95px;        
+    margin: -121px auto 95px;        
 }
 
 .slider-btn {
@@ -1337,20 +1333,20 @@ fieldset{
 }
 
 .img-box {
-    position: relative;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 31px;       
+    position: relative;    
+    margin-bottom: 31px;
+    height: 380px;       
 }
 
 .img-box img {
-    z-index: -1;
+    z-index: -1;    
 }
 
 .img-box .btn {
     display: none;
-    position: absolute; 
+    position: absolute;
+    top: 43.5%;
+    left: 20.5%; 
 
     background-color: transparent;
     border: 0;
@@ -1361,7 +1357,8 @@ fieldset{
 .img-box a {
     display: none;
     position: absolute;
-    top: 60%;    
+    top: 56.5%;
+    left: 30%;    
     
     color: #000;
     font-size: 13px;
@@ -1411,7 +1408,7 @@ fieldset{
 
 .pagination-item.prev a,
 .pagination-item.next a {    
-    padding: 25px 30px;
+    padding: 23px 29px;
 }
 
 .pagination-item.prev a:hover,
@@ -1429,15 +1426,14 @@ fieldset{
 }
 
 .pagination-item.next {
-    margin-left: 203px;
+    margin-left: 204px;
 }
 
 .pagination-item.next a, 
 .pagination-item.prev a, 
 .pagination-item-current a {
     font-family: 'gilroyextrabold', Arial, sans-serif;    
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16px;    
     font-weight: 800;
     color: #000;
     text-transform: uppercase;
