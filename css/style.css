@@ -328,7 +328,8 @@ fieldset{
 }
  
 .site-navigation {
-    display: flex;   
+    display: flex;
+    flex-wrap: wrap;  
     width: 520px;
     margin-left: auto;
     margin-right: 55px;
@@ -552,7 +553,8 @@ fieldset{
 
 .product-list {    
     padding: 0;
-    display: flex;    
+    display: flex;
+    flex-wrap: wrap;    
 }
 
 .product-item:not(:last-child) {
@@ -762,7 +764,8 @@ fieldset{
 }
 
 .brand-list {
-    display: flex;    
+    display: flex;
+    flex-wrap: wrap;    
     padding: 0;
     margin-top: 95px;
     margin-bottom: 85px;    
@@ -1338,6 +1341,30 @@ fieldset{
     height: 380px;       
 }
 
+.catalog-img-new:before {
+    position: absolute;
+    z-index: 100;
+    top: 27px;
+    right: 26px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;   
+    align-items: center;    
+    justify-content: center;    
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    content: 'New';
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,.1);
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: 50%;
+    font-family: Gilroy,Verdana,sans-serif;
+    font-size: 14px;
+    font-weight: 800;    
+}
+
 .img-box img {
     z-index: -1;    
 }
@@ -1482,7 +1509,9 @@ footer {
 }
 
 .cart-footer {
-    display: flex;          
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;          
 }
 
 .cart-footer .user-navigation-item  {
@@ -1501,11 +1530,12 @@ footer {
     font-size: 15px;
     line-height: 30px;
     margin: 0;
-    padding-bottom: 2px;    
+    padding-bottom: 2px;
+    max-width: 260px;    
 }
 
 .row-middle-footer p:first-child {
-    letter-spacing: .33px;
+    letter-spacing: .33px;    
 }
 
 .row-middle-footer a {
@@ -1520,8 +1550,10 @@ footer {
 
 .navigation-footer {
     display: flex;
+    flex-wrap: wrap;
     margin-right: auto;
     margin-left: 164px;
+    max-width: 560px;
 }
 
 .navigation-footer li:not(:last-child) {
@@ -1579,9 +1611,11 @@ footer {
 
 .social-img {
     display: flex;
+    flex-wrap: wrap;
     align-items: center; 
     margin-right: 482px;
-    margin-left: auto;       
+    margin-left: auto;
+    max-width: 360px;       
 }
 
 .social-img a:not(:last-child) {
