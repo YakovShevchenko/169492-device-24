@@ -5,17 +5,14 @@
     <title>HTML Academy: Девайс-каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-
   <header class="page-header">
     <div class="container">
-
       <div class="header-top">
         <a href="index.html" class="logo header-logo"><img src="img/logo-device.svg" width="163" height="35" alt="logo"></a>
-        <form class="search-field" action="https://echo.htmlacademy.ru" method="get">
-          <label for="search"></label>
+        <form class="search-field" action="https://echo.htmlacademy.ru" method="get">          
           <input type="search" name="search" id="search" class="search" placeholder="Поиск по сайту">
           <button type="submit" class="search-button">Найти</button>
         </form>
@@ -28,7 +25,6 @@
           <li class="cart-item"><a href="#">Корзина</a></li>
         </ul>
       </div>
-
       <div class="header-middle">
         <a class="catalog-tab-menu" href="#">Каталог товаров</a>
         <div class="catalog-navigation-block">  
@@ -50,11 +46,9 @@
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>        
-      </div>
-       
+      </div>       
     </div>     
   </header>
-
   <main class="catalog-main">
     <div class="container">
       <h2 class="page-title">Моноподы для селфи</h2>
@@ -65,11 +59,11 @@
       </ul>
       <div class="page-bar">
         <div class="filter-head">
-            <h2 class="filter-title">Фильтр:</h2>
+          <h2 class="filter-title">Фильтр:</h2>
         </div>
         <section class="sorting">
           <div class="sorting-container">
-            <h2>Сортировка:</h2>
+            <h3>Сортировка:</h3>
             <ul class="sorting-how">
               <li class="sorting-price current"><a href="#" aria-label="цена товара">По цене</a></li>
               <li class="sorting-type"><a href="#" aria-label="тип товара">По типу</a></li>
@@ -83,25 +77,25 @@
         </section>  
       </div> 
       <div class="catalog-container">       
-      <div class="filter-block">              
-        <section class="filter">                   
+        <div class="filter-block">              
+          <section class="filter">                   
             <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">              
-                <fieldset class="filter-item price">                    
-                  <legend class="filter-box-title price">Стоимость:</legend>
-                  <div class="range-filter">
-                    <div class="range-controls">
-                      <div class="scale">
-                        <div class="bar"></div>
-                      </div>
-                      <div class="toggle toggle-min"></div>
-                      <div class="toggle toggle-max"></div>
+              <fieldset class="filter-item price">                    
+                <legend class="filter-box-title price">Стоимость:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
                     </div>
-                    <div class="price-controls">
-                      <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                      <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
-                    </div>
-                  </div>                  
-                </fieldset>              
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                  </div>
+                </div>                  
+              </fieldset>              
               <fieldset class="filter-item color">                
                 <legend class="filter-box-title color">Цвет</legend>
                 <ul>
@@ -144,29 +138,27 @@
               </fieldset>
               <fieldset class="filter-item bluetooth">              
                 <legend class="filter-box-title bluetooth">Bluetooth:</legend>
-                  <ul>
-                    <li class="filter-option">
-                      <label for="bluetooth-on">
-                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="on" id="bluetooth-on"  checked>
-                        <span class="custom-radio"></span>
-                        Есть
-                      </label>
-                    </li>
-                    <li class="filter-option">
-                      <label for="bluetooth-off">
-                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="off" id="bluetooth-off">
-                        <span class="custom-radio"></span>
-                        Нет
-                      </label>
-                    </li>              
-                  </ul>               
+                <ul>
+                  <li class="filter-option">
+                    <label for="bluetooth-on">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="on" id="bluetooth-on"  checked>
+                      <span class="custom-radio"></span>
+                      Есть
+                    </label>
+                  </li>
+                  <li class="filter-option">
+                    <label for="bluetooth-off">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="off" id="bluetooth-off">
+                      <span class="custom-radio"></span>
+                      Нет
+                    </label>
+                  </li>              
+                </ul>               
               </fieldset>
               <button type="submit" class="btn filter-button">Показать</button>
             </form>          
           </section>
-        </div>      
-      
-      <div class="catalog-block">        
+        </div>              
         <section class="catalog">      
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -175,8 +167,8 @@
                 <button class="btn">В корзину</button>
                 <a href="#">Добавить к сравнению</a>
               </div>
-                <div class="catalog-title-box">
-                <h3>Любительская селфи-палка</h3>
+              <div class="catalog-title-box">
+                <h3><a href="lubitel-selfe-palka.html" aria-label="Любительская селфи палка">Любительская селфи-палка</a></h3>
                 <span class="price-item">500 руб.</span>
               </div>
             </li>
@@ -187,7 +179,7 @@
                 <a href="#">Добавить к сравнению</a>
               </div>
               <div class="catalog-title-box">
-                <h3>Профессиональная<br>селфи-палка</h3>
+                <h3><a href="profy-selfe-palka.html" aria-label="Профессиональная селфи палка">Профессиональная селфи-палка</a></h3>
                 <span class="price-item">1 500 руб.</span>
               </div>
             </li>
@@ -198,7 +190,7 @@
                 <a href="#">Добавить к сравнению</a>
               </div>
               <div class="catalog-title-box">
-                <h3>Непотопляемая селфи-палка</h3>
+                <h3><a href="resistwater-selfe-palka.html" aria-label="Непотопляемая селфи-палка">Непотопляемая селфи-палка</a></h3>
                 <span class="price-item">2 500 руб.</span>
               </div>
             </li>
@@ -209,7 +201,7 @@
                 <a href="#">Добавить к сравнению</a>
               </div>
               <div class="catalog-title-box">
-                <h3>Селфи-палка &laquo;Следуй за мной&raquo;</h3>
+                <h3><a href="go-on-me-selfe-palka.html" aria-label="Непотопляемая селфи-палка">Селфи-палка &laquo;Следуй за мной&raquo;</a></h3>
                 <span class="price-item">4 900 руб.</span>
               </div>
             </li>        
@@ -221,14 +213,11 @@
             <li class="pagination-item numb"><a href="#">3</a></li>
             <li class="pagination-item next"><a href="#">Вперед</a></li>              
           </ul>
-        </section>
+        </section>        
       </div>
-    </div>
-    </div>  
-    
+    </div>    
   </main>
-
-  <footer>
+  <footer class="footer-catalog">
     <div class="container">    
       <div class="row-top-footer">
         <a href="index.html" class="logo footer-logo"><img src="img/logo-device-footer.svg" alt="footer-logo" width="163" height="35"></a>
@@ -238,8 +227,7 @@
           <li class="user-navigation-item compare-footer"><a href="#">Сравнить</a></li>
           <li class="user-navigation-item cart-item-footer"><a href="#">Корзина</a></li>
         </ul>        
-      </div>
-      
+      </div>      
       <div class="row-middle-footer">
         <p class="address-footer">г.Москва, ул.Строителей, 15</p>
         <ul class="navigation-footer">
@@ -248,8 +236,7 @@
           <li class="navigation-item"><a href="#">Контакты</a></li>
         </ul>
         <p class="phone-footer">Тел.:<a href="tel:+74954959595">+7 (495) 495-95-95</a></p>            
-      </div>
-          
+      </div>          
       <div class="row-bottom-footer">        
         <div class="social-img">
           <a href="#"><img src="img/facebook.svg" width="32" height="32" alt="facebook"></a> 
