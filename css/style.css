@@ -127,6 +127,10 @@ a {
     margin-left: 60px;
 }
 
+.main-header .header-top {
+    padding-top: 31px;
+}
+
 .header-middle {
     position: relative;    
     display: flex;
@@ -592,8 +596,11 @@ a {
 
 .product-menu h3 {
     margin-top: 31px;
-    margin-bottom: 0;
-    line-height: 25px;
+    margin-bottom: 0;    
+    font-family: 'gilroyextrabold', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;    
     letter-spacing: .2px;
 }
 
@@ -605,14 +612,6 @@ a {
     justify-content: center;
     box-sizing: border-box;
     background-color: #f7e296;
-}
-
-.product-menu h3 a {
-    font-family: 'gilroyextrabold', Arial, sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000;
-    text-align: center;
 }
 
 .monopod-for-selfie {
@@ -858,7 +857,7 @@ a {
 }
 
 .about-us .about-us-text {    
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 }
 
 .contacts p {    
@@ -995,8 +994,8 @@ a {
 }
 
 .sorting-type {
-    margin-right: 31px;
-    letter-spacing: .25px;
+    margin-right: 28px;
+    letter-spacing: .2px;
 }
 
 .sorting-popular {
@@ -1006,6 +1005,7 @@ a {
 
 .sorting-how a {
     font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: #000;
@@ -1568,7 +1568,7 @@ a {
 
 .row-middle-footer {
     display: flex;   
-    padding-top: 22px;
+    padding-top: 23px;
 }
 
 .row-middle-footer p {
